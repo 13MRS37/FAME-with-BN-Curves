@@ -376,8 +376,11 @@ The implementation has not undergone an independent cryptographic security audit
 6. **C. D. de Caro and V. Iovino.** *jPBC: Java Pairing Based Cryptography.* Proceedings of the 2011 IEEE Symposium on Computers and Communications (ISCC 2011).
 
 7. **JPBC-FAME.** Original implementation repository.  
-   https://github.com/chrizchow/JPBC-FAME
-
+    https://github.com/chrizchow/JPBC-FAME
+   
+8. **Bachelor-Thesis link**
+    http://ir.lib.uth.gr/xmlui/handle/11615/83698
+   
 ## 11. Acknowledgements
 
 This project builds upon the original JPBC-FAME implementation and extends it with additional pairing parameter configurations, a graphical interface, and experimental evaluation.
