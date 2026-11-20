@@ -238,63 +238,7 @@ The thesis also presents comparisons between individual parameter configurations
 
 These results are historical experimental findings from the thesis. They are not automatically reproduced by launching the GUI.
 
-## 7. Project Structure
-
-```text
-Final_2025/
-│
-├── src/
-│   ├── gui/
-│   │   ├── FAMEController.java
-│   │   ├── FAMEGui.fxml
-│   │   ├── FameWrapper.java
-│   │   ├── Main.java
-│   │   ├── dark.css
-│   │   └── light.css
-│   │
-│   └── hk/
-│       └── chriz/
-│           ├── AESCoder.java
-│           ├── FAME.java
-│           ├── FAMECipherText.java
-│           ├── FAMEMasterKey.java
-│           ├── FAMEPubKey.java
-│           ├── FAMESecretKey.java
-│           ├── MSP.java
-│           └── Main.java
-│
-├── lib/
-│   ├── jpbc-api-2.0.0.jar
-│   ├── jpbc-plaf-2.0.0.jar
-│   ├── jpbc-crypto-2.0.0.jar
-│   ├── jpbc-benchmark-2.0.0.jar
-│   ├── jpbc-pbc-2.0.0.jar
-│   ├── jpbc-mm-2.0.0.jar
-│   ├── bcprov-jdk16-1.46.jar
-│   └── jna-3.2.5.jar
-│
-├── 158.properties
-├── 190.properties
-├── 222.properties
-├── 254.properties
-├── 286.properties
-├── 318.properties
-├── 350.properties
-├── 382.properties
-├── 414.properties
-├── 446.properties
-├── 478.properties
-├── 510.properties
-├── 542.properties
-├── 574.properties
-├── 606.properties
-├── 638.properties
-├── default.properties
-│
-└── README.md
-```
-
-## 8. Requirements
+## 7. Requirements
 
 - JDK 22 or later.
 - JavaFX SDK 24.0.1 (or a compatible JavaFX SDK).
@@ -303,11 +247,11 @@ Final_2025/
 
 JavaFX is not bundled with the project and must be installed separately.
 
-## 9. Installation and Execution (Windows PowerShell)
+## 8. Installation and Execution (Windows PowerShell)
 
 The following instructions use Windows PowerShell and the Java compiler directly. No IDE is required.
 
-### 9.1 Download the Project
+### 8.1 Download the Project
 
 Clone the repository:
 
@@ -323,7 +267,7 @@ Navigate to the project directory:
 cd .\FAME_Upgraded\Final_2025
 ```
 
-### 9.2 Configure JavaFX
+### 8.2 Configure JavaFX
 
 Download and extract the JavaFX SDK.
 
@@ -342,7 +286,7 @@ java -version
 javac -version
 ```
 
-### 9.3 Compile the Project
+### 8.3 Compile the Project
 
 Create the output directory:
 
@@ -367,7 +311,7 @@ javac --module-path "$env:PATH_TO_FX" `
       $javaFiles
 ```
 
-### 9.4 Run the Graphical Application
+### 8.4 Run the Graphical Application
 
 Launch the JavaFX interface:
 
@@ -378,7 +322,7 @@ java --module-path "$env:PATH_TO_FX" `
      gui.Main
 ```
 
-### 9.5 Run the Console Application
+### 8.5 Run the Console Application
 
 To execute the console-based implementation:
 
@@ -397,7 +341,7 @@ It then executes Setup, KeyGen, Encryption, and Decryption and displays the elap
 
 **Important:** Execute the application from the `Final_2025` directory. The application searches for `.properties` files in its current working directory.
 
-## 10. Security Considerations
+## 9. Security Considerations
 
 This project is an academic implementation and is not intended for production use.
 
@@ -413,7 +357,7 @@ AES-ECB does not provide authenticated encryption and is not recommended for pro
 
 The implementation has not undergone an independent cryptographic security audit.
 
-## 11. References
+## 10. References
 
 1. **Ben Lynn.** *PBC Library Manual – Type F Internals.*  
    https://crypto.stanford.edu/pbc/manual/ch08s08.html
