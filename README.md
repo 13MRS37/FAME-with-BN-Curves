@@ -378,13 +378,13 @@ The implementation has not undergone an independent cryptographic security audit
 7. **JPBC-FAME.** Original implementation repository.  
    https://github.com/chrizchow/JPBC-FAME
 
-## 12. Acknowledgements
+## 11. Acknowledgements
 
 This project builds upon the original JPBC-FAME implementation and extends it with additional pairing parameter configurations, a graphical interface, and experimental evaluation.
 
 The work is associated with a Bachelor's thesis (2024) focused on Attribute-Based Encryption and the experimental evaluation of different elliptic-curve pairing configurations.
 
-## 13. Disclaimer
+## 12. Disclaimer
 
 This software is provided for academic, educational, and experimental purposes only.
 
