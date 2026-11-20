@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane fx:controller="gui.FAMEController" xmlns:fx="http://javafx.com/fxml">
+    <center>
+        <VBox spacing="10.0" alignment="TOP_LEFT">
+            <padding><Insets top="15" right="15" bottom="15" left="15"/></padding>
+            <children>
+                <!-- Attributes section: label + Add button -->
+                <HBox spacing="5.0">
+                    <children>
+                        <Label text="Attributes (ATTRIBUTE:VALUE):" />
+                        <Button text="Add Attribute" onAction="#handleAddAttribute"/>
+                    </children>
+                </HBox>
+                <!-- Container for dynamic attribute TextFields -->
+                <VBox fx:id="attributeList" spacing="5.0"/>
+                
+                <!-- Properties file selection -->
+                <HBox spacing="5.0">
+                    <children>
+                        <Label text="Properties file:" />
+                        <ComboBox fx:id="propertiesCombo" prefWidth="200.0" />
+                    </children>
+                </HBox>
+                
+                <!-- Plaintext input -->
+                <Label text="Plaintext:" />
+                <TextArea fx:id="plaintextArea" prefRowCount="3" prefWidth="400.0" wrapText="true"/>
+                
+                <!-- Encrypt action button -->
+                <Button text="Encrypt" onAction="#handleEncrypt" />
+                
+                <!-- Clear action button -->
+                <Button text="Clear" onAction="#handleClear"/>
+                
+                <!-- Dark/Light theme button -->
+				<Button text="Toggle Theme" onAction="#handleToggleTheme"/>
+
+                
+                <!-- Output: Ciphertext and Decrypted message -->
+                <Label text="Ciphertext:" />
+                <TextArea fx:id="ciphertextArea" editable="false" wrapText="true" prefRowCount="3"/>
+                <Label text="Decrypted:" />
+                <TextArea fx:id="decryptedArea" editable="false" wrapText="true" prefRowCount="2"/>
+            </children>
+        </VBox>
+    </center>
+</BorderPane>

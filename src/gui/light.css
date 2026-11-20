@@ -1,0 +1,8 @@
+.root {
+    -fx-background-color: #ffffff;
+    -fx-text-fill: #000000;
+}
+.text-area {
+    -fx-control-inner-background: white;
+    -fx-text-fill: black;
+}
