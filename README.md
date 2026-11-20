@@ -339,7 +339,7 @@ The console application requests:
 
 It then executes Setup, KeyGen, Encryption, and Decryption and displays the elapsed time for each operation.
 
-**Important:** Execute the application from the `Final_2025` directory. The application searches for `.properties` files in its current working directory.
+**Note:** The application loads the selected `.properties` configuration file from the working directory. Ensure that the required configuration file is available in the application's working directory when launching it.
 
 ## 9. Security Considerations
 
